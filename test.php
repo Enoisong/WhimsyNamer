@@ -10,7 +10,7 @@
 <body>
 <?php
 $cn = pg_connect("host=localhost port=5432 dbname=WhimsyNamer user=postgres password=admins");
- 
+
 if (!$cn) {
     die("Connection failed: " . pg_last_error());
 }
@@ -32,13 +32,15 @@ if ($data === false) {
     die("Fetching data failed: " . pg_last_error($cn));
 }
 
-// Sort the data based on 'id' column numerically and 'sname' column alphabetically
+// Sort the data based on 'sname' column alphabetically
 usort($data, function($a, $b) {
-    if ($a['id'] === $b['id']) {
-        return strcmp($a['sname'], $b['sname']);
-    }
-    return ($a['id'] < $b['id']) ? -1 : 1;
+    return strcmp($a['sname'], $b['sname']);
 });
+
+// Assign new numerical order to 'id' column
+foreach ($data as $key => $row) {
+    $data[$key]['id'] = $key + 1;
+}
 
 // Display the table name
 echo "<h1 style='text-align: center;'>WhimsyNamer</h1>";
