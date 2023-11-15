@@ -63,7 +63,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo](https://eno-s9dz.onrender.com)
+- [Live Demo](http://localhost/WhimsyNamer/test.php)
  
  <!-- GETTING STARTED -->
 
