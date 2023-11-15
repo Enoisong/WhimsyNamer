@@ -1,4 +1,13 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhimsyNamer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
 <?php
 $cn = pg_connect("host=localhost port=5432 dbname=WhimsyNamer user=postgres password=admins");
  
@@ -52,3 +61,5 @@ echo "</table>";
 // Close the database connection
 pg_close($cn);
 ?>
+</body>
+</html>
