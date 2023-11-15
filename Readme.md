@@ -26,7 +26,7 @@
 <!-- PROJECT DESCRIPTION -->
 # 📖 WhimsyNamer<a name="about-project"></a> 
 
-> **[WhimsyNamer]** is a designed to efficiently showcase a list of student names, providing an organized and accessible interface for users. 
+> **[WhimsyNamer]** is designed to efficiently showcase a list of student names, providing an organized and accessible interface for users. 
  
 ## 🛠 Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
